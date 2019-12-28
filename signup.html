@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <title>Sign In</title>
+	<head>
+	    <link rel="stylesheet" href="style.css" />    
+	</head>
+	<body>
+	<link href="booo.min.css" rel="stylesheet"/>
+	<script src="booo.min.js"></script>
+		<form method="post" id="addname">
+		<div class="container-fluid">
+		<div class="row col-sm-13">
+			<img src="S:\sample\back.jpeg" width="1600" height="750">
+			<center>
+				<div class="base">
+					<div id="info2">
+						Sign in
+					</div><p>
+					<div id ="form2">
+						<input class="say12" id="enter011" placeholder="UserName" type="string" name="name" style="width:200px; height:42px; border: solid 1px #c2c4c6;border-radius:5px; font-size:16px; padding-left:8px;" />
+						<p>
+						<div>
+						<input placeholder="Password" type="password" name="name" style="width:200px; height:42px; border: solid 1px #c2c4c6;border-radius:5px; font-size:16px; padding-left:8px;" />
+						</div><br>
+						</p>
+						</p><input type="submit"  value="Continue" style="width:155px; height:42px; border: solid 1px #c2c4c6;border-radius:5px; font-size:16px; padding-left:8px;"></p>
+						<div>
+							<p>
+							<input value="yes" type="checkbox">
+							<strong class="remember-label"> Stay signed in </strong> 
+						</div>
+					</div>
+					<p class="message" ></p><p><strong>Not Registered? <strong><a href="login.html">sign up</a> </p>
+				</div>
+				
+			</center>
+			</div>
+			</div>
+			</form>
+		<script>
+		var form = document.getElementById("addname");
+		$(function() {
+			$('input.say12').on('mouseover',function(e){
+				e.preventDefault();
+				var text= "user name";
+				var url = "http://translate.google.com/translate_tts?tl=en&q=" + text + "&client=tw-ob";
+				$('audio').attr('src', url).get(0).play();
+			});
+		});
+		</script>
+	</body>
+</html>

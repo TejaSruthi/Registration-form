@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lan="en">
+	<title>Sign Up</title>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+	<link href="booo.min.css" rel="stylesheet"/>
+	<script src="booo.min.js"></script>
+		
+		<div class="container-fluid">
+		<div class="row">
+		<div class="col-13">
+		<form method="post" id="addname" style="padding:0px !important">
+			<img src="back.jpeg"  width="1542" height="800" />
+			
+			<center><div  class="base">
+				<div id="info1">
+					Sign up to continue with us	
+				</div><p>
+				<div id="form1" >
+					<div >
+						<img src="propic.png" alt="propic" width="150" height="120" class="say"/>
+					</div>
+					
+					<div >
+						<input class="say1" placeholder="First Name" type="string" id="enter" style="width:155px; height:42px; border: solid 1px #c2c4c6;border-radius:5px; font-size:16px; padding-left:8px;" />
+						<input class="say2" placeholder="Last Name" type="string" id="enter1" style="width:155px; height:42px; border: solid 1px #c2c4c6;border-radius:5px; font-size:16px; padding-left:8px;" />
+					</div>
+					<p><div >
+						<input class="say3" placeholder="Username" type="string" id="enter2" style="width:313px; height:42px; border: solid 1px #c2c4c6;border-radius:5px; font-size:16px; padding-left:8px;" />
+					</p></div>
+					<div>
+						<span >
+							<input class="say4" placeholder="Password" type="password" id="enter3" style="width:155px; height:42px; border: solid 1px #c2c4c6;border-radius:5px; font-size:16px; padding-left:8px;" />
+							<input class="say5" placeholder="Confirm Password" type="password" id="enter4" style="width:155px; height:42px; border: solid 1px #c2c4c6;border-radius:5px; font-size:16px; padding-left:8px;" />
+						</span>
+					</div>
+					<p></p>
+						<span class="say7" id="trail"><input  type="radio" name="Gender" value="male" > Male</span>
+						<span class="say8" id="trail"><input  type="radio" name="Gender" value="female" > Female</span>
+						<span class="say9" id="trail"><input  type="radio" name="Gender" value="other" > Others</span></p><br>
+						<input class="say10" type="submit" value="Continue" style="width:155px; height:42px; border: solid 1px #c2c4c6;border-radius:5px; font-size:16px; padding-left:8px;"></p>
+					
+						
+				</div>
+				<b><p></p><p><a href="signup.html" name="final" class="say11">sign in</a> </p>				
+			</center></div>
+			</div>
+			</div>
+		</div>
+		</div>
+		</form>
+		<audio src="" class="speech" hidden></audio> 
+		<script src="min.js"></script>
+		<script>
+		$(function() {
+			$('img.say').on('mouseover',function(e){
+				e.preventDefault();
+				var text= "welcome";
+				var url = "http://translate.google.com/translate_tts?tl=en&q=" + text + "&client=tw-ob";
+				$('audio').attr('src', url).get(0).play();
+			});
+		});
+		$(function() {
+			$('input.say1').on('mouseover',function(e){
+				e.preventDefault();
+				var text= "first name";
+				var url = "http://translate.google.com/translate_tts?tl=en&q=" + text + "&client=tw-ob";
+				$('audio').attr('src', url).get(0).play();
+			});
+		});
+		$(function() {
+			$('input.say2').on('mouseover',function(e){
+				e.preventDefault();
+				var text="last name";
+				var url = "http://translate.google.com/translate_tts?tl=en&q=" + text + "&client=tw-ob";
+				$('audio').attr('src', url).get(0).play();
+			});
+		});
+		$(function() {
+			$('input.say3').on('mouseover',function(e){
+				e.preventDefault();
+				var text= "user name";
+				var url = "http://translate.google.com/translate_tts?tl=en&q=" + text + "&client=tw-ob";
+				$('audio').attr('src', url).get(0).play();
+			});
+		});
+		$(function() {
+			$('input.say4').on('mouseover',function(e){
+				e.preventDefault();
+				var text="Password";
+				var url = "http://translate.google.com/translate_tts?tl=en&q=" + text + "&client=tw-ob";
+				$('audio').attr('src', url).get(0).play();
+			});
+		});
+		$(function() {
+			$('input.say5').on('mouseover',function(e){
+				e.preventDefault();
+				var text="Confirm Password"; 
+				var url = "http://translate.google.com/translate_tts?tl=en&q=" + text + "&client=tw-ob";
+				$('audio').attr('src', url).get(0).play();
+			});
+		});
+		$(function() {
+			$('span.say7').on('mouseover',function(e){
+				e.preventDefault();
+				var text= "male";
+				var url = "http://translate.google.com/translate_tts?tl=en&q=" + text + "&client=tw-ob";
+				$('audio').attr('src', url).get(0).play();
+			});
+		});
+		
+		$(function() {
+			$('span.say8').on('mouseover',function(e){
+				e.preventDefault();
+				var text= "Female";
+				var url = "http://translate.google.com/translate_tts?tl=en&q=" + text + "&client=tw-ob";
+				$('audio').attr('src', url).get(0).play();
+			});
+		});
+		$(function() {
+			$('span.say9').on('mouseover',function(e){
+				e.preventDefault();
+				var text= "others";
+				var url = "http://translate.google.com/translate_tts?tl=en&q=" + text + "&client=tw-ob";
+				$('audio').attr('src', url).get(0).play();
+			});
+		});
+		$(function() {
+			$('p.say11').on('mouseover',function(e){
+				e.preventDefault();
+				var text= "Already have an account then tap here";
+				var url = "http://translate.google.com/translate_tts?tl=en&q=" + text + "&client=tw-ob";
+				$('audio').attr('src', url).get(0).play();
+			});
+		});
+		var form = document.getElementById("addname");
+		</script>
+	</body>	
+</html>
